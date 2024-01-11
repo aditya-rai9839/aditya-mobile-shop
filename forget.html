@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forget password</title>
+  <link rel="stylesheet" href="forget.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="forget-password-page">
+    <h1>Forget password</h1>
+  <form action="login.html">
+    <label for="user">Enter the name :</label><br>
+    <input class="input" type="text" id="user" required placeholder="Enter the name"><br>
+    
+    <label for="privouspassword">Enter your privous password :</label><br>
+    <input class="input" type="password" id="privouspassword" required placeholder="Enter your privous password"> <br>
+
+    <label for="newpassword">Enter your New password :</label><br>
+    <input class="input" type="password" id="newpassword" required placeholder="Enter your New password"><br>
+    <input  type="checkbox" name="remember me" id="remember">
+    <label class="checkbox" for="remember">Remember me</label><br>
+    <input class="input" id="submit" type="submit"><br>
+    <a href="sighup.html">Creaat a new account</a><br>
+    <a href="login.html">Login page</a>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+  </form>
+  </div>
+  <script>
+        let user=document.querySelector("#user");
+    let pass=document.querySelector("#password");
+    let newpass=document.querySelector("#newpassword");
+    let btm=document.querySelector("#submit");
+    btm.addEventListener("click",()=>{
+      if((user.value.length<=1))
+      {
+        alert("Invalid user name");
+      }
+      else if((pass.value.length<=1))
+      {
+        alert("Invalid pass name");
+      }
+      else if((newpass.value.length<=1))
+      {
+        alert("Invalid password name");
+      }
+      else{
+        alert(`your new password is ${newpass.value}`);
+      } 
+    });
+let sum=()=>{
+console.log(user.value.length);
+}
+  </script>
+</body>
+</html>

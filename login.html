@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="login-page">
+    <h1>Login page</h1>
+  <form action="home.html">
+    <label for="user">Enter your username :</label><br>
+    <input class="input" type="text" id="user" required placeholder="Enter your username"><br>
+    <label for="password">Enter your password :</label><br>
+    <input class="input" type="password" id="password" required placeholder="Enter the password"><br>
+    <input  type="checkbox" name="remember me" id="remember">
+    <label class="checkbox" for="remember">Remember me</label><br>
+    <input class="input" id="submit" type="submit" onclick="hello()"><br>
+    <a href="forget.html">forget password</a><br>
+    <a href="sighup.html">Don't have any account</a>
+
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+  </form>
+  </div>
+
+  <script>
+    let user=document.querySelector("#user");
+    let pass=document.querySelector("#password");
+    let btm=document.querySelector("#submit");
+    let form=document.querySelector("#form");
+    btm.addEventListener("click",()=>{
+      if(user.value=="aditya"&&pass.value=="123"){
+        alert("suscessful")
+      }
+      else{
+        if(user.value!="aditya"){
+          alert("Invalid username")
+        }
+        if(pass.value!="123"){
+          alert("Invalid username")
+        }
+        
+      }
+    });
+  </script>
+</body>
+</html>

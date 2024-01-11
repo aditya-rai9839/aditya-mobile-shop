@@ -1,0 +1,161 @@
+*{
+  margin:0;
+  padding:0;
+
+}
+body{
+  background-color: #145369;
+}
+
+
+.navbor{
+  background-color:#041014;
+  color: #fff;
+  height:50px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  align-items: center;
+  position:fixed;
+  top:0;
+  width:98vw;
+  padding: 7px 50px;
+}
+.nav-right{
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+.nav-right a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+}
+.nav-right i{
+  background-color: wheat;
+  font-size: 2rem;
+  width: 7px;
+  height: 10px;
+}
+.content{
+  display: flex;
+  position:absolute;
+  top:70px;
+  justify-content: space-around;
+ border: 2px solid red;
+  width: 100vw;
+  margin-top: 5%;
+}
+.main-left-image{
+  width:30%;
+  text-align: end;
+}
+.main-left-image img {
+  border-radius: 10%;
+}
+.main-right-text 
+{
+  outline:none;
+  width:40%;
+  height:100%;
+  border: 2px solid black;
+}
+.main-right-text  button{
+  height: 2rem;
+  width: 3rem;
+  background-color: aqua;
+}
+.main-icong{
+  width: 5%;
+  border: 2px solid blue;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+  height:330px;
+  background-color: black;
+  position:relative;
+  left: 0;
+  bottom:0px;
+  margin-top:100vh;
+  
+}
+@media(max-width:950px){
+  .nav-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* text-align: right; */
+  }
+  .nav-right a{
+    font-size:0.75rem;
+    color: red;
+  }
+  .main-left-image{
+    width:30%;
+    text-align:center;
+  }
+  .nav-right a i{
+    font-size:0.75rem;
+  }
+  .content{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-left-image img{
+    height:200px;
+    width:200px;
+  } 
+  .main-right-text 
+{
+  outline:none;
+  width:60%;
+  height:100%;
+  border: 2px solid black;
+}
+  .main-right-text{
+
+  }
+  .footer-content{
+    width:100%;
+    margin-top:190vh;
+  }
+}
+@media(max-width:550px)
+{
+  .main-left-image img{
+    height:150px;
+    width:150px;
+  } 
+  .main-right-text 
+{
+  outline:none;
+  width:80%;
+  height:100%;
+  border: 2px solid black;
+}
+
+.main-left-image{
+  width:30%;
+  text-align:center;
+}
+  .footer-content{
+    width:100%;
+    margin-top:200vh;
+  }
+}
+@media(max-width:500px){
+  .footer-content{
+    width:100%;
+    margin-top:200vh;
+  }
+}
+@media(max-width:350px){
+  .footer-content{
+    width:100%;
+    margin-top:250vh;
+  }
+}
